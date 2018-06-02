@@ -24,6 +24,7 @@ class PostController extends Controller
     }
 
     public function store(Request $request) {
+
     	$this->validate($request, [
     		'title'		=> 'required',
     		'body'		=> 'required'
@@ -36,6 +37,7 @@ class PostController extends Controller
     	]);
 
     	return response()->json(["message" => "Add success"]);
+        
     }
 
     public function update(Request $request, $id) {
