@@ -37,7 +37,7 @@ class PostController extends Controller
     	]);
 
     	return response()->json(["message" => "Add success"]);
-        
+
     }
 
     public function update(Request $request, $id) {
